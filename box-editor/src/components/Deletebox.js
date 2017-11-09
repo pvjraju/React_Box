@@ -12,8 +12,7 @@ class Deletebox extends Component {
   Delete(){
   	 var width=document.getElementById("width").value;
        var height=document.getElementById("height").value;
-       var color=document.getElementById("color").value;
-       alert(color);
+      // alert(color);
        var box=document.getElementById("box").value;
        alert(box);
        var c=document.getElementById("canvas");
@@ -26,37 +25,37 @@ class Deletebox extends Component {
        switch(box){
        case '1':	
         //alert("works");
-       ctx.fillStyle=color;
-       ctx.fillRect(120,h1,width,height);
+      // ctx.fillStyle=color;
+       ctx.clearRect(120,h1,width,height);
        h1=height;
        break;
 
        case '2':	
         //alert("works");
         alert("h2:"+h2);
-       ctx.fillStyle=color;
-       ctx.fillRect(120,h2,width,height);
+       //ctx.fillStyle=color;
+       ctx.clearRect(120,h2,width,height);
        h2=height;
        break;
 
         case '3':	
         //alert("works");
-       ctx.fillStyle=color;
-       ctx.fillRect(120,h3,width,height);
+      // ctx.fillStyle=color;
+       ctx.clearRect(120,h3,width,height);
         h3=height;
        break;
 
        case '4':	
         //alert("works");
-       ctx.fillStyle=color;
-       ctx.fillRect(120,h4,width,height);
+       //ctx.fillStyle=color;
+       ctx.clearRect(120,h4,width,height);
        h4=height;
        break;
 
         case '5':	
         //alert("works");
-       ctx.fillStyle=color;
-       ctx.fillRect(120,h5,width,height);
+       //ctx.fillStyle=color;
+       ctx.clearRect(120,h5,width,height);
        h5=height;
        break;
 
